@@ -1,0 +1,116 @@
+name: soukjomla
+description: "B2B Marketplace for Morocco - Connect buyers and sellers in bulk."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State management
+  provider: ^6.0.0
+  
+  # HTTP client
+  dio: ^5.0.0
+  
+  # Image picker & caching
+  image_picker: ^1.0.0
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  
+  # Native splash screen
+  flutter_native_splash: ^2.3.0
+  
+  # App icon generation
+  flutter_launcher_icons: ^0.13.0
+  
+  # WebSocket
+  web_socket_channel: ^2.4.0
+  
+  # JSON serialization
+  json_annotation: ^4.8.0
+  
+  # Form validation
+  validators: ^3.0.0
+  
+  # Pagination
+  infinite_scroll_pagination: ^4.0.0
+  
+  # Local storage
+  shared_preferences: ^2.2.0
+  
+  # Connectivity
+  connectivity_plus: ^5.0.0
+  
+  # Localization (optional, for Darija/French)
+  intl: ^0.19.0
+  
+  # Analytics & crash reporting
+  firebase_core: ^2.24.0
+  firebase_analytics: ^10.7.0
+  firebase_crashlytics: ^3.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.0
+  json_serializable: ^6.7.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/logos/
+  
+  fonts:
+    - family: Outfit
+      fonts:
+        - asset: assets/fonts/Outfit-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Outfit-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Outfit-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Outfit-Bold.ttf
+          weight: 700
+    
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+
+flutter_native_splash:
+  color: "#22335C"
+  color_dark: "#22335C"
+  image: assets/logos/sj_logo.png
+  image_dark: assets/logos/sj_logo.png
+  branding: assets/logos/sj_logo.png
+  branding_dark: assets/logos/sj_logo.png
+  android_12:
+    image: assets/logos/sj_logo.png
+    image_dark: assets/logos/sj_logo.png
+    icon_background_color: "#22335C"
+    icon_background_color_dark: "#22335C"
+
+flutter_launcher_icons:
+  image_path: "assets/logos/sj_logo.png"
+  image_path_ios: "assets/logos/sj_logo_ios.png"
+  ios: true
+  android: true
+  adaptive_icon_background: "#DFA426"
+  adaptive_icon_foreground: "assets/logos/sj_logo_adaptive.png"
+  web:
+    generate: true
+    image_path: "assets/logos/sj_logo.png"
